@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ymioupws0j37"]
+
+[ext_resource type="PackedScene" uid="uid://c6p3hhn2vlb6b" path="res://source/Lowpoly_PineTrees.fbx" id="1_2lxbc"]
+[ext_resource type="Material" uid="uid://bptafbqbp2xlu" path="res://textures/nigga.tres" id="2_o22ei"]
+
+[node name="Lowpoly_PineTrees" unique_id=1731375012 instance=ExtResource("1_2lxbc")]
+
+[node name="Lowpoly_Pine_01_Blue_" parent="." index="0" unique_id=881620940]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_01_Green" parent="." index="1" unique_id=38896442]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_01_Orange" parent="." index="2" unique_id=188107018]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_01_Yellow" parent="." index="3" unique_id=698946577]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_02_Blue" parent="." index="4" unique_id=1352344719]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_02_Green" parent="." index="5" unique_id=952856388]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_02_Orange" parent="." index="6" unique_id=852323807]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_02_Yellow" parent="." index="7" unique_id=1519513298]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_03_Blue" parent="." index="8" unique_id=453362292]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_03_Green" parent="." index="9" unique_id=874436730]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_03_Orange" parent="." index="10" unique_id=252862060]
+surface_material_override/0 = ExtResource("2_o22ei")
+
+[node name="Lowpoly_Pine_03_Yellow" parent="." index="11" unique_id=416279609]
+surface_material_override/0 = ExtResource("2_o22ei")

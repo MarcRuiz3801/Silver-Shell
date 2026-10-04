@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dr7cslwx37ifa"
+path="res://.godot/imported/knight.dialogue-247437279c005058827f54063dd09b5a.tres"
+
+[deps]
+
+source_file="res://dialogues/knight.dialogue"
+dest_files=["res://.godot/imported/knight.dialogue-247437279c005058827f54063dd09b5a.tres"]
+
+[params]
+
+defaults=true

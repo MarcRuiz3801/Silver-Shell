@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://by84p21evunjt"
+path="res://.godot/imported/Space II Dorian Concept（extended） [5x1htYDmvok].mp3-ff599b12e0cd9cc83c15829641f55d99.mp3str"
+
+[deps]
+
+source_file="res://Space II Dorian Concept（extended） [5x1htYDmvok].mp3"
+dest_files=["res://.godot/imported/Space II Dorian Concept（extended） [5x1htYDmvok].mp3-ff599b12e0cd9cc83c15829641f55d99.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

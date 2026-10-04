@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dewq3ty0v21cg"]
+
+[ext_resource type="PackedScene" uid="uid://dfbjswoqborox" path="res://Idle.fbx" id="1_e3hhy"]
+
+[node name="Idle" unique_id=1054125461 instance=ExtResource("1_e3hhy")]
+
+[node name="scabbard_2" parent="Skeleton3D" parent_id_path=PackedInt32Array(1070301077) index="0" unique_id=2036259269]
+transform = Transform3D(0.07848406, 0.61430013, -0.78515965, 0.7768967, -0.5312315, -0.33797142, -0.6247174, -0.5834625, -0.518941, 0.16189623, 0.9540752, 0.18729645)
+bone_idx = 1

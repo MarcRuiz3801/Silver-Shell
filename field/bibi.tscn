@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b4oegajf4ltch"]
+
+[ext_resource type="PackedScene" uid="uid://cqknlx3srbv8n" path="res://field/lowpoly_pine_01_green.tscn" id="1_ytkpm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ytkpm"]
+size = Vector3(0.23282528, 5.245117, 0.33000946)
+
+[node name="Node3D" type="Node3D" unique_id=2034390049]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=69576338]
+
+[node name="Lowpoly_Pine_01_Green" parent="StaticBody3D" unique_id=426855522 instance=ExtResource("1_ytkpm")]
+transform = Transform3D(119.33455, 0, 0, 0, 1.8181977, 119.32069, 0, -119.32069, 1.8181977, 0, 2.802236, 0)
+visibility_range_end = 90.0
+visibility_range_end_margin = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1838535643]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02546072, 2.6026387, -0.018932343)
+shape = SubResource("BoxShape3D_ytkpm")
+debug_fill = false

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://idvsqwy65e3e"
+path="res://.godot/imported/park bird - are you lost but even more magical [looped] [JTkafneuA6Q] (mp3cut.net).mp3-0ce73c56c176e28ebadc339cffed5229.mp3str"
+
+[deps]
+
+source_file="res://park bird - are you lost but even more magical [looped] [JTkafneuA6Q] (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/park bird - are you lost but even more magical [looped] [JTkafneuA6Q] (mp3cut.net).mp3-0ce73c56c176e28ebadc339cffed5229.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cwn8uxyjvbaw7"
+path="res://.godot/imported/knife-slashing (mp3cut.net).mp3-6749521536ab7b6f32842faad961e50c.mp3str"
+
+[deps]
+
+source_file="res://addons/dialogue_manager/l10n/knife-slashing (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/knife-slashing (mp3cut.net).mp3-6749521536ab7b6f32842faad961e50c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4buufpme2sa"
+path="res://.godot/imported/Forgotten Medieval Forest Village – Rustic Fantasy Village Ambience for Study & Sleep [lRiP-E2_GZ0] (mp3cut.net).mp3-4a1299cede0dc2ab4a78aa8f3a305906.mp3str"
+
+[deps]
+
+source_file="res://Forgotten Medieval Forest Village – Rustic Fantasy Village Ambience for Study & Sleep [lRiP-E2_GZ0] (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Forgotten Medieval Forest Village – Rustic Fantasy Village Ambience for Study & Sleep [lRiP-E2_GZ0] (mp3cut.net).mp3-4a1299cede0dc2ab4a78aa8f3a305906.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

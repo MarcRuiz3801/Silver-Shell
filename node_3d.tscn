@@ -1,0 +1,275 @@
+[gd_scene format=3 uid="uid://dhq8t0ngavgpm"]
+
+[ext_resource type="Script" uid="uid://bciwqagdeyrdf" path="res://node_3d.gd" id="1_tereu"]
+[ext_resource type="Shader" uid="uid://d3jmkxa0t76rx" path="res://node_3d.gdshader" id="2_6iypd"]
+[ext_resource type="Script" uid="uid://dg1i0kik5v4rh" path="res://720p.gd" id="2_riyl1"]
+[ext_resource type="Texture2D" uid="uid://kfm43cfsc04q" path="res://imgonline-com-ua-TextureSeamless.jpg" id="2_wlxy5"]
+[ext_resource type="Image" uid="uid://ciluowkcehofr" path="res://Node3D/Heightmap_0_0.res" id="3_3v7ru"]
+[ext_resource type="Texture2D" uid="uid://u5io8b8srvj2" path="res://imgonline-com-ua-TextureSeamless-Lz1l4AWaxC6sv.jpg" id="3_lggff"]
+[ext_resource type="Texture2D" uid="uid://bv001b0dpilc8" path="res://output-onlinepngtools (7).png" id="3_tereu"]
+[ext_resource type="Texture2D" uid="uid://dosjfr4exi5p3" path="res://skybox/escaibocsyesBK (1).png" id="4_cdqbm"]
+[ext_resource type="Texture2D" uid="uid://c74kfphkpa35q" path="res://imgonline-com-ua-TextureSeamless-L0jsuDwcl5.png" id="4_obt1j"]
+[ext_resource type="Image" uid="uid://drdtd7jocxahw" path="res://Node3D/Color_0_0.res" id="4_s0gvp"]
+[ext_resource type="Image" uid="uid://c8fxqhtpcjlym" path="res://Node3D/Splatmap_0_0_0.res" id="4_tcnuu"]
+[ext_resource type="PackedScene" uid="uid://b4oegajf4ltch" path="res://field/bibi.tscn" id="5_2yde8"]
+[ext_resource type="Texture2D" uid="uid://6u5m5dflvavm" path="res://skybox/escaibocsyesDN (1).png" id="5_imku0"]
+[ext_resource type="PackedScene" uid="uid://b8lqsu8gaci4p" path="res://field/bibi2.tscn" id="6_id0nj"]
+[ext_resource type="Texture2D" uid="uid://cw5girr8jowhp" path="res://skybox/escaibocsyesFT (1).png" id="6_wlxy5"]
+[ext_resource type="PackedScene" uid="uid://7jiymlhsw4lr" path="res://field/bibi3.tscn" id="7_1q667"]
+[ext_resource type="Texture2D" uid="uid://dvgyylx5foiwt" path="res://skybox/escaibocsyesLF (1).png" id="7_3v7ru"]
+[ext_resource type="Texture2D" uid="uid://bsdiy2nypyxhm" path="res://output-smallpngtools.png" id="7_vxd74"]
+[ext_resource type="Texture2D" uid="uid://navcd1x8xfda" path="res://skybox/escaibocsyesRT (1).png" id="8_tcnuu"]
+[ext_resource type="Texture2D" uid="uid://ifn8xu576yde" path="res://skybox/escaibocsyesUP (1).png" id="9_tuemg"]
+[ext_resource type="Script" uid="uid://c5gma2rxdfxdg" path="res://character_body_3d.gd" id="10_tereu"]
+[ext_resource type="Image" uid="uid://cuf0hbwesun2b" path="res://Node3D/Object_0_0_0.res" id="10_ype4i"]
+[ext_resource type="Script" uid="uid://dgmv7xts40ul0" path="res://camera_3d.gd" id="11_cdqbm"]
+[ext_resource type="AudioStream" uid="uid://idvsqwy65e3e" path="res://park bird - are you lost but even more magical [looped] [JTkafneuA6Q] (mp3cut.net).mp3" id="15_3v7ru"]
+[ext_resource type="FontFile" uid="uid://ddoloxmpqhaul" path="res://upheavtt.ttf" id="15_i0g27"]
+[ext_resource type="Script" uid="uid://cm3o3x0sna3vn" path="res://label.gd" id="16_ealrb"]
+[ext_resource type="Script" uid="uid://d33qmswaowlw6" path="res://audio_stream_player.gd" id="16_tcnuu"]
+[ext_resource type="Script" uid="uid://ccmdbb6s673r0" path="res://tasks.gd" id="17_ealrb"]
+[ext_resource type="Script" uid="uid://dalm8lhpbuosu" path="res://Scripts/knife.gd" id="18_pb8dk"]
+[ext_resource type="Script" uid="uid://o5jys535svij" path="res://area_3d.gd" id="22_s0gvp"]
+[ext_resource type="PackedScene" uid="uid://54es1vqec7br" path="res://bonfire.tscn" id="29_2yde8"]
+[ext_resource type="PackedScene" uid="uid://cvo8ce2pktm7r" path="res://log.tscn" id="30_1q667"]
+[ext_resource type="PackedScene" uid="uid://bal3v0tkeswyf" path="res://bed.tscn" id="30_id0nj"]
+[ext_resource type="Texture2D" uid="uid://c735x4dlnejxh" path="res://textures/bbc42ec3-7df2-4226-8356-d6666f004e8d_removalai_preview.png" id="32_ype4i"]
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_tuemg"]
+albedoTexture = ExtResource("2_wlxy5")
+specular = 0.0
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_s0gvp"]
+albedoTexture = ExtResource("3_lggff")
+specular = 0.0
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_riyl1"]
+albedoTexture = ExtResource("4_obt1j")
+specular = 0.0
+
+[sub_resource type="TextureSetsResource" id="TextureSetsResource_i0g27"]
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_tuemg"), SubResource("TextureSetResource_s0gvp"), SubResource("TextureSetResource_riyl1")])
+
+[sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_pb8dk"]
+objectFrequency = 3
+randomRange = 4.0
+objectScenes = Array[PackedScene]([ExtResource("5_2yde8"), ExtResource("6_id0nj"), ExtResource("7_1q667")])
+
+[sub_resource type="ObjectResource" id="ObjectResource_2mu51"]
+definition = SubResource("ObjectDefinitionResource_pb8dk")
+
+[sub_resource type="ZoneResource" id="ZoneResource_ealrb"]
+heightMapImage = ExtResource("3_3v7ru")
+colorImage = ExtResource("4_s0gvp")
+splatmapsImage = Array[Image]([ExtResource("4_tcnuu")])
+objectsImage = Array[Image]([ExtResource("10_ype4i")])
+
+[sub_resource type="ZonesResource" id="ZonesResource_jsnrv"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_ealrb")])
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cdqbm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_imku0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lggff"]
+size = Vector3(0.22094727, 2.4901123, 2.2791634)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5t8nk"]
+shader = ExtResource("2_6iypd")
+shader_parameter/front_tex = ExtResource("6_wlxy5")
+shader_parameter/back_tex = ExtResource("4_cdqbm")
+shader_parameter/left_tex = ExtResource("7_3v7ru")
+shader_parameter/right_tex = ExtResource("8_tcnuu")
+shader_parameter/up_tex = ExtResource("9_tuemg")
+shader_parameter/down_tex = ExtResource("5_imku0")
+shader_parameter/aurora_tex = ExtResource("3_tereu")
+shader_parameter/aurora_scale = 0.7310000340239801
+shader_parameter/aurora_aspect_ratio = 0.54400002258012
+shader_parameter/aurora_speed = 0.0110000005225
+shader_parameter/aurora_intensity = 0.338000016055
+shader_parameter/aurora_tint = Color(1, 1, 1, 1)
+shader_parameter/horizon_cutoff = 0.1330000063175
+
+[sub_resource type="Sky" id="Sky_dhlwf"]
+sky_material = SubResource("ShaderMaterial_5t8nk")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_nu31w"]
+background_mode = 2
+sky = SubResource("Sky_dhlwf")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_obt1j"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4arys"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ype4i"]
+size = Vector3(9.880302, 1.0667725, 0.5342335)
+
+[node name="Node3D" type="Node3D" unique_id=1004366650]
+script = ExtResource("1_tereu")
+
+[node name="Node" type="Node" parent="." unique_id=904151661]
+script = ExtResource("2_riyl1")
+
+[node name="TerraBrush" type="TerraBrush" parent="." unique_id=1375544520]
+dataPath = "res://Node3D"
+zonesSize = 64
+textureSets = SubResource("TextureSetsResource_i0g27")
+textureDetail = 25
+nearestTextureFilter = true
+objects = Array[ObjectResource]([SubResource("ObjectResource_2mu51")])
+terrainZones = SubResource("ZonesResource_jsnrv")
+metadata/_edit_lock_ = false
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=724105]
+z_index = 3
+offset_left = -33.0
+offset_top = -35.0
+offset_right = 1312.0
+offset_bottom = 757.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="HUD" type="Control" parent="." unique_id=1128490936]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StaminaBar" type="ProgressBar" parent="HUD" unique_id=719840761]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = 394.0
+offset_right = 84.0
+offset_bottom = 658.5
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_cdqbm")
+theme_override_styles/fill = SubResource("StyleBoxFlat_imku0")
+fill_mode = 3
+show_percentage = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="HUD" unique_id=120615180]
+
+[node name="TextureRect" type="TextureRect" parent="HUD/CanvasLayer" unique_id=2022071232]
+offset_left = 607.0
+offset_top = 320.0
+offset_right = 673.0
+offset_bottom = 386.0
+texture = ExtResource("7_vxd74")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="HUD/CanvasLayer" unique_id=1868215687]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_right = 260.0
+offset_bottom = 143.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("15_i0g27")
+theme_override_font_sizes/font_size = 45
+text = "chapter 1: Where am i?"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("16_ealrb")
+
+[node name="Tasks" type="Label" parent="HUD/CanvasLayer" unique_id=272951161]
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 290.0
+offset_bottom = 445.0
+theme_override_fonts/font = ExtResource("15_i0g27")
+theme_override_font_sizes/font_size = 30
+script = ExtResource("17_ealrb")
+
+[node name="Bbc42Ec37Df242268356D6666f004e8dRemovalaiPreview" type="Sprite2D" parent="HUD/CanvasLayer" unique_id=1278154]
+show_behind_parent = true
+z_index = -1
+position = Vector2(1061, 593)
+scale = Vector2(0.74129933, 0.7412993)
+texture = ExtResource("32_ype4i")
+script = ExtResource("18_pb8dk")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1818725610]
+transform = Transform3D(0.9963185, 0.085729964, 0, 0.029766645, -0.34593564, 0.93778604, 0.08039635, -0.9343334, -0.34721392, 0, 15.123812, -6.860276)
+light_energy = 0.683
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1238991650 node_paths=PackedStringArray("music")]
+stream = ExtResource("15_3v7ru")
+volume_db = -20.411
+script = ExtResource("16_tcnuu")
+music = NodePath(".")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=19085429 node_paths=PackedStringArray("fade_rect")]
+transform = Transform3D(0.39501655, 0, 0.9186741, 0, 1, 0, -0.9186741, 0, 0.39501655, -21.955078, 1.9164665, 3.2280612)
+script = ExtResource("22_s0gvp")
+fade_rect = NodePath("../FadeRect")
+fade_duration = 0.8
+next_scene_path = "res://field/field.tscn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2076407631]
+transform = Transform3D(0.9479997, 0, 0.3182641, 0, 1, 0, -0.3182641, 0, 0.9479997, -2.9212627, 1.2034302, 0.49947548)
+shape = SubResource("BoxShape3D_lggff")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1283930328]
+environment = SubResource("Environment_nu31w")
+
+[node name="Player" type="CharacterBody3D" parent="WorldEnvironment" unique_id=1668332787 node_paths=PackedStringArray("stamina_bar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.57987696, 0)
+script = ExtResource("10_tereu")
+move_speed = 2.0
+sprint_speed = 4.0
+stamina_bar = NodePath("../../HUD/StaminaBar")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/Player" unique_id=1119545285]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_obt1j")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment/Player" unique_id=1023094734]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_4arys")
+
+[node name="CameraPivot" type="Node3D" parent="WorldEnvironment/Player" unique_id=655625031]
+
+[node name="Camera3D" type="Camera3D" parent="WorldEnvironment/Player/CameraPivot" unique_id=1735915444]
+transform = Transform3D(1, 0, 0, 0, 0.76733303, 0.64124876, 0, -0.64124876, 0.76733303, 0, 0.24527168, 0)
+fov = 95.0
+script = ExtResource("11_cdqbm")
+bob_frequency = null
+bob_amplitude = null
+bob_side_amplitude = null
+smooth_speed = null
+
+[node name="Node3D3" parent="." unique_id=1091823916 instance=ExtResource("30_id0nj")]
+transform = Transform3D(-0.3326738, 0.0064883493, -0.37321046, 0, 0.4999245, 0.0086913025, 0.37326688, 0.005782737, -0.33262354, 0.06476349, -1.0465561, -2.5516884)
+
+[node name="Node3D4" parent="." unique_id=1819511466 instance=ExtResource("30_id0nj")]
+transform = Transform3D(0.27859733, 0.007217101, -0.41512823, -3.780526e-11, 0.4999245, 0.0086913025, 0.41519096, -0.0048427465, 0.27855518, -5.186929, -1.0465561, -3.1692562)
+
+[node name="Node3D2" parent="." unique_id=2096052982 instance=ExtResource("30_id0nj")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.3552687, -1.0336118, -5.2288203)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=952211318]
+transform = Transform3D(0.17508014, 0.003910155, 0.09660044, -0.0056760726, 0.19990739, 0.0021956335, -0.096512794, -0.0046636136, 0.17511003, 0.7931924, 0.15642071, -3.844983)
+
+[node name="Node3D5" parent="StaticBody3D" unique_id=41374404 instance=ExtResource("30_1q667")]
+transform = Transform3D(1, 1.8626451e-09, 5.9604645e-08, 9.313226e-10, 0.99999994, -1.8626451e-09, 2.9802322e-08, 1.8626451e-09, 1, 0, 0, 0)
+
+[node name="Node3D6" parent="StaticBody3D" unique_id=1531016593 instance=ExtResource("30_1q667")]
+transform = Transform3D(0.8873112, 0.001865488, -0.4611674, -0.008263973, 0.99989533, -0.011855627, 0.4610973, 0.014330707, 0.887234, -6.139009, -0.058252335, -10.5666)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1082008736]
+transform = Transform3D(0.8950207, -0.041604143, 0.4440799, 0.038284343, 0.99913156, 0.016444629, -0.44437844, 0.0022830246, 0.89583623, -0.78795624, 0.1878264, -0.31066608)
+shape = SubResource("BoxShape3D_ype4i")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1284372434]
+transform = Transform3D(0.9998704, -0.00018083451, 0.01609968, 0.00017347009, 0.9999999, 0.00045882212, -0.016099762, -0.00045596986, 0.9998703, -7.0570683, 0.010030508, -10.967042)
+shape = SubResource("BoxShape3D_ype4i")
+
+[node name="Node3D" parent="StaticBody3D" unique_id=1277256987 instance=ExtResource("29_2yde8")]
+transform = Transform3D(0.5248361, -0.026732799, -0.2895384, 0.022812508, 0.59940284, -0.013990846, 0.2898737, 0.0012296615, 0.5253302, -2.9849043, -0.85826993, -4.144305)
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

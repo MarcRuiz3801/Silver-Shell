@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bamdwb1g0cjn4"
+path="res://.godot/imported/Bracov_dialogue.dialogue-2d0fb4fe6f9f3d973940f977cb89a0ef.tres"
+
+[deps]
+
+source_file="res://Tavern/Bracov_dialogue.dialogue"
+dest_files=["res://.godot/imported/Bracov_dialogue.dialogue-2d0fb4fe6f9f3d973940f977cb89a0ef.tres"]
+
+[params]
+
+defaults=true

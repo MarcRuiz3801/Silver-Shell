@@ -1,0 +1,17 @@
+~ start
+Bracov: [speed=0.3]Hey buddy,[wait=0.45] aren't you gonna rob me,[wait=0.2] are you? [#voice=uid://dcnfv3bfroi60]
+- No! Why would I?
+	Bracov: [speed=0.3]Oh, I don't know, [wait=1][speed=0.2]I just got robbed [wait=0.7]3 days ago [#voice=uid://cev8fv8o028q3]
+- No man, I'm here to talk with you
+	Bracov: [speed=0.3]Oh, therefore, what do you want buddy? [#voice=uid://wt7no1anv108]
+You: I don't know where I am, I just woke up in the middle of a field
+Bracov: [speed=0.2]Oh, you for sure were captured by those[wait=0.3] "Dragon Catholics" [#voice=uid://bymn6jyrg2mjh]
+You: Who are those?
+Bracov: [speed=0.3]They are the most known cult[speed=0.2] in all the kingdom.[wait=0.7][speed=0.25] They have the power to create [speed=0.2]new abilities,[wait=1.3] but they dont know if they will work [#voice=uid://c42wyeiujj2ip]
+You: So?
+Bracov: [speed=0.25]So they test in people to get to know if they are dangerous[wait=0.3] or if they could kill you. [#voice=uid://bfoiqj1qhoowm]
+You: Oh no, does that mean...
+Bracov: [speed=0.25]Yes, [wait=0.4]you probably have secret abilities that could kill you. [#voice=uid://20noqf61kslu]
+You: Well, how do i get to know them?
+Bracov: [speed=0.25]The cult has a hidden papyrus[wait=0.8] with all the abilities that they have tested.[wait=0.4] There you will get to know what abilities you have[wait=0.4] and how to use them [#voice=uid://crnu67wwvivdt]
+=> END

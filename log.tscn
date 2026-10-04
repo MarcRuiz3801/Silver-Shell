@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cvo8ce2pktm7r"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbtgk315kn6ej" path="res://source/log1_low.obj" id="1_a0a2b"]
+[ext_resource type="Texture2D" uid="uid://cbotmi2xcdsfh" path="res://textures/log1_diffuse.jpg" id="2_vgnok"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_loqsm"]
+albedo_texture = ExtResource("2_vgnok")
+texture_filter = 0
+
+[node name="Node3D" type="Node3D" unique_id=41374404]
+
+[node name="Log1Low" type="MeshInstance3D" parent="." unique_id=2046880024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.143514, 0, 8.323364)
+mesh = ExtResource("1_a0a2b")
+surface_material_override/0 = SubResource("StandardMaterial3D_loqsm")

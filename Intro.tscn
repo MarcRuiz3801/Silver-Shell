@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cval6cuvav1lj"]
+
+[ext_resource type="Script" uid="uid://cy0hxscnhf8yv" path="res://Scripts/timer.gd" id="1_sb8jg"]
+[ext_resource type="Script" uid="uid://cda0rqh7iveur" path="res://intro.gd" id="1_vltdc"]
+[ext_resource type="VideoStream" uid="uid://tculbc7n4m22" path="res://202606281214-_1_.ogv" id="2_vltdc"]
+[ext_resource type="Script" uid="uid://dua0vqf67semf" path="res://1080p.gd" id="4_33sem"]
+
+[node name="Control" type="Control" unique_id=1146428783]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sb8jg")
+temps_espera = 6.0
+seguent_escena = "uid://corqxbuw654t6"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1898964931]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+stream = ExtResource("2_vltdc")
+script = ExtResource("1_vltdc")
+
+[node name="Node" type="Node" parent="." unique_id=581004753]
+script = ExtResource("4_33sem")

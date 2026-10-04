@@ -1,0 +1,10 @@
+$cert = New-SelfSignedCertificate -Subject "Silver_Shell_Installer" -CertStoreLocation "cert:\CurrentUser\My" -HashAlgorithm sha256 -type CodeSigning
+
+$pwd = ConvertTo-SecureString -String "k58396745jj88" -Force -AsPlainText
+
+Export-PfxCertificate -cert $cert -FilePath Silver_Shell_Setup.pfx -Password $pwd
+
+-------------------------------------------------------------------------------------
+CMD
+
+signtool.exe sign /f Silver_Shell_Setup.pfx /fd SHA256 /p k58396745jj88 Silver_Shell_Setup.exe

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cnki6hf0cbshl"]
+
+[ext_resource type="PackedScene" uid="uid://dyq4viqdpt1lb" path="res://Low Poly Dagger.glb" id="1_2g8ic"]
+
+[node name="Low Poly Dagger" unique_id=1950149373 instance=ExtResource("1_2g8ic")]

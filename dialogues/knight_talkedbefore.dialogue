@@ -1,0 +1,8 @@
+~ start
+Skeleton Knight: [speed=0.25]If you ask me, [speed=0.3][wait=0.2]you better find [wait=0.1][speed=0.2]Bracov in the cave. [#voice=uid://1k4bauvyhg5h]
+- Ok, thanks
+	Skeleton Knight: [speed=0.2]Good journey, [speed=0.25]traveler.  [#voice=uid://ce081cc2mym22] => END
+- What cave?
+	Skeleton Knight: [speed=0.2]Oh, [wait=0.3]this one,[wait=0.2] [speed=0.23]on the right side of the mountain. [#voice=uid://c3ov4qp5omwgw]
+You: [speed=0.4]Thanks. => END
+=> END

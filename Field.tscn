@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://d4bfd3jvumpn1"]
+
+[ext_resource type="Shader" uid="uid://d3jmkxa0t76rx" path="res://node_3d.gdshader" id="1_q764i"]
+[ext_resource type="Texture2D" uid="uid://bv001b0dpilc8" path="res://output-onlinepngtools (7).png" id="2_u4cvj"]
+[ext_resource type="Texture2D" uid="uid://dosjfr4exi5p3" path="res://skybox/escaibocsyesBK (1).png" id="3_f2h2i"]
+[ext_resource type="Texture2D" uid="uid://6u5m5dflvavm" path="res://skybox/escaibocsyesDN (1).png" id="4_menme"]
+[ext_resource type="Texture2D" uid="uid://cw5girr8jowhp" path="res://skybox/escaibocsyesFT (1).png" id="5_tb17j"]
+[ext_resource type="Texture2D" uid="uid://dvgyylx5foiwt" path="res://skybox/escaibocsyesLF (1).png" id="6_bssv4"]
+[ext_resource type="Texture2D" uid="uid://navcd1x8xfda" path="res://skybox/escaibocsyesRT (1).png" id="7_hb57x"]
+[ext_resource type="Texture2D" uid="uid://ifn8xu576yde" path="res://skybox/escaibocsyesUP (1).png" id="8_0ocwy"]
+[ext_resource type="Script" uid="uid://c5gma2rxdfxdg" path="res://character_body_3d.gd" id="9_4c07y"]
+[ext_resource type="Script" uid="uid://dgmv7xts40ul0" path="res://camera_3d.gd" id="10_i8jn4"]
+[ext_resource type="Texture2D" uid="uid://kfm43cfsc04q" path="res://imgonline-com-ua-TextureSeamless.jpg" id="11_kbiyu"]
+[ext_resource type="Image" uid="uid://7hu1cg5wg7ih" path="res://field/Field/Heightmap_0_0.res" id="12_f2h2i"]
+[ext_resource type="Image" uid="uid://bcqojvtundwp4" path="res://field/Splatmap_0_0_0.res" id="13_menme"]
+[ext_resource type="Texture2D" uid="uid://bsdiy2nypyxhm" path="res://output-smallpngtools.png" id="14_hb57x"]
+[ext_resource type="FontFile" uid="uid://ddoloxmpqhaul" path="res://upheavtt.ttf" id="15_0ocwy"]
+[ext_resource type="Script" uid="uid://ccmdbb6s673r0" path="res://tasks.gd" id="16_4c07y"]
+[ext_resource type="Texture2D" uid="uid://c735x4dlnejxh" path="res://textures/bbc42ec3-7df2-4226-8356-d6666f004e8d_removalai_preview.png" id="17_i8jn4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y12s4"]
+shader = ExtResource("1_q764i")
+shader_parameter/front_tex = ExtResource("5_tb17j")
+shader_parameter/back_tex = ExtResource("3_f2h2i")
+shader_parameter/left_tex = ExtResource("6_bssv4")
+shader_parameter/right_tex = ExtResource("7_hb57x")
+shader_parameter/up_tex = ExtResource("8_0ocwy")
+shader_parameter/down_tex = ExtResource("4_menme")
+shader_parameter/aurora_tex = ExtResource("2_u4cvj")
+shader_parameter/aurora_scale = 0.7310000340239801
+shader_parameter/aurora_aspect_ratio = 0.54400002258012
+shader_parameter/aurora_speed = 0.0110000005225
+shader_parameter/aurora_intensity = 0.338000016055
+shader_parameter/aurora_tint = Color(1, 1, 1, 1)
+shader_parameter/horizon_cutoff = 0.1330000063175
+
+[sub_resource type="Sky" id="Sky_dhlwf"]
+sky_material = SubResource("ShaderMaterial_y12s4")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_803ni"]
+background_mode = 2
+sky = SubResource("Sky_dhlwf")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4rby5"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hg45c"]
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_sbvaq"]
+albedoTexture = ExtResource("11_kbiyu")
+specular = 0.0
+
+[sub_resource type="TextureSetsResource" id="TextureSetsResource_ruifa"]
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_sbvaq")])
+
+[sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_g8shx"]
+objectScenes = Array[PackedScene]([null, null, null])
+
+[sub_resource type="ObjectResource" id="ObjectResource_7sg6c"]
+definition = SubResource("ObjectDefinitionResource_g8shx")
+
+[sub_resource type="ZoneResource" id="ZoneResource_tb17j"]
+heightMapImage = ExtResource("12_f2h2i")
+splatmapsImage = Array[Image]([ExtResource("13_menme")])
+
+[sub_resource type="ZonesResource" id="ZonesResource_bssv4"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_tb17j")])
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbiyu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y12s4"]
+
+[node name="Field" type="Node3D" unique_id=626351175]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1987325681]
+environment = SubResource("Environment_803ni")
+
+[node name="Player" type="CharacterBody3D" parent="WorldEnvironment" unique_id=1805550280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9351657, 0)
+script = ExtResource("9_4c07y")
+move_speed = 2.0
+sprint_speed = 4.0
+mouse_sensitivity = 0.004
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/Player" unique_id=1646639256]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_4rby5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment/Player" unique_id=187964541]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_hg45c")
+
+[node name="CameraPivot" type="Node3D" parent="WorldEnvironment/Player" unique_id=1258893272]
+
+[node name="Camera3D" type="Camera3D" parent="WorldEnvironment/Player/CameraPivot" unique_id=1165338532]
+transform = Transform3D(1, 0, 0, 0, 0.76733303, 0.64124876, 0, -0.64124876, 0.76733303, 0, 0.24527168, 0)
+fov = 95.0
+script = ExtResource("10_i8jn4")
+mouse_sensitivity = 0.01
+
+[node name="TerraBrush" type="TerraBrush" parent="WorldEnvironment" unique_id=175334105]
+dataPath = "res://Field"
+zonesSize = 500
+textureSets = SubResource("TextureSetsResource_ruifa")
+textureDetail = 195
+nearestTextureFilter = true
+objects = Array[ObjectResource]([SubResource("ObjectResource_7sg6c")])
+terrainZones = SubResource("ZonesResource_bssv4")
+metadata/_edit_lock_ = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1626417806]
+transform = Transform3D(0.9963185, 0.085729994, -3.1372878e-09, -0.009564595, 0.11115578, 0.993757, 0.08519478, -0.9900983, 0.111566335, 0, 15.123812, -6.860276)
+light_energy = 0.683
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=1579351515]
+z_index = 3
+offset_left = -16.0
+offset_top = -28.0
+offset_right = 1329.0
+offset_bottom = 764.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="HUD" type="Control" parent="." unique_id=1609204933]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StaminaBar" type="ProgressBar" parent="HUD" unique_id=864337211]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = 394.0
+offset_right = 84.0
+offset_bottom = 658.5
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_kbiyu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_y12s4")
+fill_mode = 3
+show_percentage = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="HUD" unique_id=388578140]
+
+[node name="TextureRect" type="TextureRect" parent="HUD/CanvasLayer" unique_id=173025700]
+offset_left = 607.0
+offset_top = 320.0
+offset_right = 673.0
+offset_bottom = 386.0
+texture = ExtResource("14_hb57x")
+expand_mode = 1
+
+[node name="Tasks" type="Label" parent="HUD/CanvasLayer" unique_id=526134964]
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 290.0
+offset_bottom = 445.0
+theme_override_fonts/font = ExtResource("15_0ocwy")
+theme_override_font_sizes/font_size = 30
+script = ExtResource("16_4c07y")
+
+[node name="Bbc42Ec37Df242268356D6666f004e8dRemovalaiPreview" type="Sprite2D" parent="HUD/CanvasLayer" unique_id=689532161]
+show_behind_parent = true
+z_index = -1
+position = Vector2(992, 560)
+scale = Vector2(0.74129933, 0.7412993)
+texture = ExtResource("17_i8jn4")

@@ -1,0 +1,326 @@
+[gd_scene format=3 uid="uid://1i17dlm1drhh"]
+
+[ext_resource type="Script" uid="uid://o5jys535svij" path="res://area_3d.gd" id="1_7gix2"]
+[ext_resource type="Texture2D" uid="uid://kfm43cfsc04q" path="res://imgonline-com-ua-TextureSeamless.jpg" id="1_th5du"]
+[ext_resource type="Script" uid="uid://bpjy1ja1qka7h" path="res://field/area_3d_label.gd" id="1_yfesa"]
+[ext_resource type="Texture2D" uid="uid://c74kfphkpa35q" path="res://imgonline-com-ua-TextureSeamless-L0jsuDwcl5.png" id="2_5fjag"]
+[ext_resource type="PackedScene" uid="uid://b8lqsu8gaci4p" path="res://field/bibi2.tscn" id="2_wdk0v"]
+[ext_resource type="PackedScene" uid="uid://7jiymlhsw4lr" path="res://field/bibi3.tscn" id="3_7gem3"]
+[ext_resource type="PackedScene" uid="uid://b4oegajf4ltch" path="res://field/bibi.tscn" id="4_8qjuk"]
+[ext_resource type="Shader" uid="uid://d3jmkxa0t76rx" path="res://node_3d.gdshader" id="4_uhvsy"]
+[ext_resource type="Image" uid="uid://7hu1cg5wg7ih" path="res://field/Field/Heightmap_0_0.res" id="5_5fjag"]
+[ext_resource type="Texture2D" uid="uid://bv001b0dpilc8" path="res://output-onlinepngtools (7).png" id="5_wdk0v"]
+[ext_resource type="Texture2D" uid="uid://dosjfr4exi5p3" path="res://skybox/escaibocsyesBK (1).png" id="6_7gem3"]
+[ext_resource type="Image" uid="uid://dwav1kb32lf8g" path="res://field/Field/Object_0_0_0.res" id="6_7gix2"]
+[ext_resource type="Texture2D" uid="uid://6u5m5dflvavm" path="res://skybox/escaibocsyesDN (1).png" id="7_2brfb"]
+[ext_resource type="Image" uid="uid://bi3i0walr7cdt" path="res://field/Field/Splatmap_0_0_0.res" id="7_h4dss"]
+[ext_resource type="Texture2D" uid="uid://cw5girr8jowhp" path="res://skybox/escaibocsyesFT (1).png" id="8_0253r"]
+[ext_resource type="Texture2D" uid="uid://dvgyylx5foiwt" path="res://skybox/escaibocsyesLF (1).png" id="9_w02ep"]
+[ext_resource type="Texture2D" uid="uid://navcd1x8xfda" path="res://skybox/escaibocsyesRT (1).png" id="10_1ah5r"]
+[ext_resource type="Texture2D" uid="uid://ifn8xu576yde" path="res://skybox/escaibocsyesUP (1).png" id="11_cj17w"]
+[ext_resource type="Script" uid="uid://c5gma2rxdfxdg" path="res://character_body_3d.gd" id="12_1wj1n"]
+[ext_resource type="Script" uid="uid://dgmv7xts40ul0" path="res://camera_3d.gd" id="13_tc3x4"]
+[ext_resource type="Script" uid="uid://digox7hoow7op" path="res://field/fade_rect.gd" id="17_0253r"]
+[ext_resource type="Texture2D" uid="uid://bsdiy2nypyxhm" path="res://output-smallpngtools.png" id="17_w02ep"]
+[ext_resource type="FontFile" uid="uid://ddoloxmpqhaul" path="res://upheavtt.ttf" id="18_1ah5r"]
+[ext_resource type="PackedScene" uid="uid://0no6ckjttgp3" path="res://Cabin.glb" id="18_1wj1n"]
+[ext_resource type="Texture2D" uid="uid://c735x4dlnejxh" path="res://textures/bbc42ec3-7df2-4226-8356-d6666f004e8d_removalai_preview.png" id="19_vg36m"]
+[ext_resource type="AudioStream" uid="uid://by84p21evunjt" path="res://Space II Dorian Concept（extended） [5x1htYDmvok].mp3" id="20_1ah5r"]
+[ext_resource type="PackedScene" uid="uid://bp1leay8yiw58" path="res://buaaa.tscn" id="22_cj17w"]
+[ext_resource type="Script" uid="uid://ccmdbb6s673r0" path="res://tasks.gd" id="22_kvrwt"]
+[ext_resource type="PackedScene" uid="uid://csggkekwlphy0" path="res://dialogues/scenes/balloon.tscn" id="22_tc3x4"]
+[ext_resource type="Script" uid="uid://dkks2wql28xfc" path="res://field/dialogue.gd" id="24_8qjuk"]
+[ext_resource type="Script" uid="uid://pjx3gfly8wjv" path="res://field/tasks.gd" id="25_th5du"]
+[ext_resource type="Script" uid="uid://dalm8lhpbuosu" path="res://Scripts/knife.gd" id="27_fqtkt"]
+[ext_resource type="AudioStream" uid="uid://cwn8uxyjvbaw7" path="res://addons/dialogue_manager/l10n/knife-slashing (mp3cut.net).mp3" id="28_yfesa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ak1wr"]
+size = Vector3(24.57135, 10.244019, 15.857246)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ecptd"]
+size = Vector3(1, 16.084106, 9.659302)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ak1wr"]
+albedo_color = Color(0, 0, 0, 1)
+metallic_specular = 0.0
+roughness = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ecptd"]
+size = Vector3(13.156659, 8.743181, 2.6367798)
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_xh4nt"]
+albedoTexture = ExtResource("1_th5du")
+specular = 0.0
+
+[sub_resource type="TextureSetResource" id="TextureSetResource_3v0tx"]
+albedoTexture = ExtResource("2_5fjag")
+
+[sub_resource type="TextureSetsResource" id="TextureSetsResource_rktca"]
+textureSets = Array[TextureSetResource]([SubResource("TextureSetResource_xh4nt"), SubResource("TextureSetResource_3v0tx")])
+
+[sub_resource type="ObjectDefinitionResource" id="ObjectDefinitionResource_1ah5r"]
+objectFrequency = 5
+randomRange = 2.0
+objectScenes = Array[PackedScene]([ExtResource("2_wdk0v"), ExtResource("3_7gem3"), ExtResource("4_8qjuk")])
+
+[sub_resource type="ObjectResource" id="ObjectResource_cj17w"]
+definition = SubResource("ObjectDefinitionResource_1ah5r")
+
+[sub_resource type="ZoneResource" id="ZoneResource_fqtkt"]
+heightMapImage = ExtResource("5_5fjag")
+splatmapsImage = Array[Image]([ExtResource("7_h4dss")])
+objectsImage = Array[Image]([ExtResource("6_7gix2")])
+
+[sub_resource type="ZonesResource" id="ZonesResource_yfesa"]
+zones = Array[ZoneResource]([SubResource("ZoneResource_fqtkt")])
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kvrwt"]
+shader = ExtResource("4_uhvsy")
+shader_parameter/front_tex = ExtResource("8_0253r")
+shader_parameter/back_tex = ExtResource("6_7gem3")
+shader_parameter/left_tex = ExtResource("9_w02ep")
+shader_parameter/right_tex = ExtResource("10_1ah5r")
+shader_parameter/up_tex = ExtResource("11_cj17w")
+shader_parameter/down_tex = ExtResource("7_2brfb")
+shader_parameter/aurora_tex = ExtResource("5_wdk0v")
+shader_parameter/aurora_scale = 0.7310000340239801
+shader_parameter/aurora_aspect_ratio = 0.54400002258012
+shader_parameter/aurora_speed = 0.0110000005225
+shader_parameter/aurora_intensity = 0.338000016055
+shader_parameter/aurora_tint = Color(1, 1, 1, 1)
+shader_parameter/horizon_cutoff = 0.1330000063175
+
+[sub_resource type="Sky" id="Sky_j3e5s"]
+sky_material = SubResource("ShaderMaterial_kvrwt")
+process_mode = 1
+
+[sub_resource type="Environment" id="Environment_th5du"]
+background_mode = 2
+sky = SubResource("Sky_j3e5s")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5fjag"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_7gix2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tc3x4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vg36m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cj17w"]
+size = Vector3(0.3950465, 0.9910126, 0.20422554)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8qjuk"]
+size = Vector3(0.103027344, 0.06750488, 0.12451172)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vg36m"]
+size = Vector3(1.4980774, 1, 1.5750732)
+
+[node name="Field" type="Node3D" unique_id=626351175]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1820730030 node_paths=PackedStringArray("label_node")]
+transform = Transform3D(0.88744575, 0, -0.46091217, 0, 1, 0, 0.46091217, 0, 0.88744575, -64.11209, 3.0440836, 180.17596)
+script = ExtResource("1_yfesa")
+missatge = "To \"the cave\""
+label_node = NodePath("../HUD/Label")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=723014955]
+transform = Transform3D(0.9584805, 0, -0.28517747, 0, 1, 0, 0.28517747, 0, 0.9584805, 9.903481, -1.1221313, 0.8322754)
+shape = SubResource("BoxShape3D_ak1wr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=110301909]
+transform = Transform3D(-0.63660264, 0.41599375, 0.64937395, 0.66088855, 0.7282363, 0.18138328, -0.39744765, 0.54463524, -0.73852056, -55.706947, 2.4635959, 185.18428)
+mesh = SubResource("BoxMesh_ecptd")
+surface_material_override/0 = SubResource("StandardMaterial3D_ak1wr")
+
+[node name="Area3D2" type="Area3D" parent="." unique_id=2044055267 node_paths=PackedStringArray("fade_rect")]
+transform = Transform3D(0.39501655, 0, 0.9186741, 0, 1, 0, -0.9186741, 0, 0.39501655, -58.015972, 1.9164665, 185.13043)
+script = ExtResource("1_7gix2")
+fade_rect = NodePath("../HUD/ColorRect")
+fade_duration = 0.8
+next_scene_path = "res://Tavern/Taverna.scn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=1711599791]
+transform = Transform3D(0.33475214, 0.942181, 0.01531758, 0.07944923, -0.012022879, -0.9967667, -0.9389502, 0.33488667, -0.07887994, -0.39834595, 0.52679205, 0.084495544)
+shape = SubResource("BoxShape3D_ecptd")
+
+[node name="TerraBrush" type="TerraBrush" parent="." unique_id=26176090]
+dataPath = "res://field/Field"
+zonesSize = 645
+textureSets = SubResource("TextureSetsResource_rktca")
+textureDetail = 252
+nearestTextureFilter = true
+objects = Array[ObjectResource]([SubResource("ObjectResource_cj17w")])
+terrainZones = SubResource("ZonesResource_yfesa")
+metadata/_edit_lock_ = false
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1870415217]
+transform = Transform3D(1, 0, 0, 0, 0.073742956, 0.9972773, 0, -0.9972773, 0.073742956, 0, 23.978325, 0)
+light_color = Color(0.9646827, 0.7250036, 0.9684872, 1)
+light_energy = 1.381
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1169602802]
+environment = SubResource("Environment_th5du")
+
+[node name="Player" type="CharacterBody3D" parent="WorldEnvironment" unique_id=1133560818 node_paths=PackedStringArray("stamina_bar") groups=["player"]]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 10.156109, 1.2408402, 85.96737)
+script = ExtResource("12_1wj1n")
+move_speed = 2.0
+sprint_speed = 4.0
+stamina_bar = NodePath("../../HUD/StaminaBar")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/Player" unique_id=1938780441 groups=["player"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_5fjag")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment/Player" unique_id=1095761806 groups=["player"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_7gix2")
+
+[node name="CameraPivot" type="Node3D" parent="WorldEnvironment/Player" unique_id=2120078700 groups=["player"]]
+
+[node name="Camera3D" type="Camera3D" parent="WorldEnvironment/Player/CameraPivot" unique_id=800597402 groups=["player"]]
+transform = Transform3D(1, 0, 0, 0, 0.76733303, 0.64124876, 0, -0.64124876, 0.76733303, 0, 0.24527168, 0)
+fov = 95.0
+script = ExtResource("13_tc3x4")
+
+[node name="Cabin" parent="WorldEnvironment" unique_id=1618804487 instance=ExtResource("18_1wj1n")]
+transform = Transform3D(2.033934, 0, 9.790971, 0, 9.999999, 0, -9.790971, 0, 2.033934, -29.305252, 70.49099, 194.16597)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment/Cabin" unique_id=1810352594]
+transform = Transform3D(0.14300923, 0, 0.98972136, 0, 1, 0, -0.98972136, 0, 0.14300923, 0.36886978, 0, -0.06626415)
+light_color = Color(0.6225911, 0.6712348, 1, 1)
+light_energy = 0.366
+light_indirect_energy = 0.0
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=1009784004]
+z_index = 1
+offset_left = -16.0
+offset_top = -28.0
+offset_right = 1329.0
+offset_bottom = 764.0
+color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+script = ExtResource("17_0253r")
+fade_time = 1.0
+
+[node name="HUD" type="Control" parent="." unique_id=1783497094]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StaminaBar" type="ProgressBar" parent="HUD" unique_id=1430694486]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = 394.0
+offset_right = 84.0
+offset_bottom = 658.5
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_tc3x4")
+theme_override_styles/fill = SubResource("StyleBoxFlat_vg36m")
+fill_mode = 3
+show_percentage = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="HUD" unique_id=1644592657]
+
+[node name="TextureRect" type="TextureRect" parent="HUD/CanvasLayer" unique_id=2081239801]
+z_index = -10
+offset_left = 607.0
+offset_top = 320.0
+offset_right = 673.0
+offset_bottom = 386.0
+texture = ExtResource("17_w02ep")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="HUD/CanvasLayer" unique_id=1674598364]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_right = 260.0
+offset_bottom = 143.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("18_1ah5r")
+theme_override_font_sizes/font_size = 45
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tasks" type="Label" parent="HUD/CanvasLayer" unique_id=1367610744]
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 290.0
+offset_bottom = 445.0
+theme_override_fonts/font = ExtResource("18_1ah5r")
+theme_override_font_sizes/font_size = 30
+script = ExtResource("22_kvrwt")
+appear_delay = 2.0
+
+[node name="ExampleBalloon" parent="HUD" unique_id=1434168376 instance=ExtResource("22_tc3x4")]
+
+[node name="Bbc42Ec37Df242268356D6666f004e8dRemovalaiPreview" type="Sprite2D" parent="HUD" unique_id=2024643708]
+show_behind_parent = true
+z_index = -1
+position = Vector2(1061, 593)
+scale = Vector2(0.74129933, 0.7412993)
+texture = ExtResource("19_vg36m")
+script = ExtResource("27_fqtkt")
+distancia = 45.0
+velocitat = 500.0
+so_mp3 = ExtResource("28_yfesa")
+
+[node name="TaskManager" type="Node" parent="HUD" unique_id=895216003]
+script = ExtResource("25_th5du")
+
+[node name="ColorRect" type="ColorRect" parent="HUD" unique_id=1879943675]
+layout_mode = 0
+offset_left = -58.0
+offset_top = -38.0
+offset_right = 1362.0
+offset_bottom = 787.0
+color = Color(0.011764706, 0.011764706, 0.011764706, 0)
+
+[node name="Label" type="Label" parent="HUD" unique_id=871493976]
+layout_mode = 0
+offset_left = 566.0
+offset_top = 432.0
+offset_right = 710.0
+offset_bottom = 462.0
+theme_override_fonts/font = ExtResource("18_1ah5r")
+theme_override_font_sizes/font_size = 24
+text = "to the cave"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=313774683]
+stream = ExtResource("20_1ah5r")
+volume_db = -14.579
+pitch_scale = 0.82
+autoplay = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=552272720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -11.685837)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1458118961]
+transform = Transform3D(0.99454737, 5.602456e-10, 0.104285434, -1.1641532e-10, 1, 9.313226e-10, -0.104285456, 8.7768276e-10, 0.9945473, 10.319519, 0.25543928, 163.8759)
+shape = SubResource("BoxShape3D_cj17w")
+
+[node name="Node3D" parent="StaticBody3D" unique_id=269052879 instance=ExtResource("22_cj17w")]
+transform = Transform3D(-0.7875667, 0, -0.17748204, 0, 0.8269933, 0, 0.19386762, 0, -0.7210019, 10.317827, -0.28705454, 163.93608)
+
+[node name="Head" type="CollisionShape3D" parent="StaticBody3D" unique_id=713815937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.313602, 0.25543928, 163.91647)
+shape = SubResource("BoxShape3D_8qjuk")
+
+[node name="Knight_Dialogue" type="Area3D" parent="." unique_id=1823479002 node_paths=PackedStringArray("objecte_a_mirar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.357782, 0.25543928, 150.91861)
+script = ExtResource("24_8qjuk")
+task_first_dialogue = "TASK_002"
+task_second_dialogue = "TASK_003"
+objecte_a_mirar = NodePath("../StaticBody3D/Head")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Knight_Dialogue" unique_id=538098270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.040145874, 1, 0.9776001)
+shape = SubResource("BoxShape3D_vg36m")
+
+[connection signal="body_entered" from="Area3D2" to="Area3D2" method="_on_body_entered"]

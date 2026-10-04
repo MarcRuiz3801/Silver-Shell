@@ -1,0 +1,16 @@
+~ start
+Skeleton Knight: [speed=0.4]Oh, [wait=0.6]hi there soldier. What brings you here? [#voice=res://dialogues/audios/SkeletonKnight1/sk_intro.mp3]
+
+- I was just, you know, walking.
+	Skeleton Knight: [speed=0.3]At the middle of the night? [#voice=res://dialogues/audios/SkeletonKnight1/sk_night_01.mp3]
+- I'm going home.
+	Skeleton Knight: [speed=0.3]At the middle of the night? [#voice=res://dialogues/audios/SkeletonKnight1/sk_night_02.mp3]
+You: [speed=0.4]I, [wait=0.3]I dont know.
+Skeleton Knight: [speed=0.2]Alright, then don't distract me. [#voice=res://dialogues/audios/SkeletonKnight1/sk_dont_distract.mp3]
+- Ok (EXIT) => END
+- But what's that home over there?
+Skeleton Knight: [speed=0.2]Oh, that,[wait=0.3] there's where the Jaarl lives [#voice=res://dialogues/audios/SkeletonKnight1/sk_jaarl_home.mp3]
+- Ok, thank you (EXIT) => END
+- What's the Jaarl?
+Skleton Knight: [speed=0.2]Stop asking questions. [#voice=res://dialogues/audios/SkeletonKnight1/sk_stop_questions.mp3]
+=> END
